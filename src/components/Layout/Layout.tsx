@@ -41,7 +41,9 @@ const Layout = (): JSX.Element => {
           eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
           posuere sollicitudin aliquam ultrices sagittis orci a.
         </Typography>
-        <Button>Click</Button>
+        <Button>No Color Applied</Button>
+        <Button color="primary">Primary Theme</Button>
+        <Button color="secondary">Secondary Theme</Button>
       </main>
     </>
   );
