@@ -13,4 +13,4 @@ const NavigationStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default NavigationStyles;
+export { NavigationStyles, drawerWidth };

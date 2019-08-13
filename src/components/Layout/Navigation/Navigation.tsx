@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Hidden from '@material-ui/core/Hidden';
 import SideDrawer from './SideDrawer/SideDrawer';
 import Navbar from './Navbar/Navbar';
-import NavigationStyles from './NavigationStyles';
+import { NavigationStyles } from './NavigationStyles';
 
 const Navigation = (): JSX.Element => {
   const classes = NavigationStyles();

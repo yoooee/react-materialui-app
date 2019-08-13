@@ -13,8 +13,7 @@ import {
   createStyles
 } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-
-const drawerWidth = 240;
+import { drawerWidth } from '../NavigationStyles';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
