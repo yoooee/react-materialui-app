@@ -6,36 +6,16 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import {
-  makeStyles,
-  Theme,
-  useTheme,
-  createStyles
-} from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import { drawerWidth } from '../NavigationStyles';
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    drawer: {
-      [theme.breakpoints.up('sm')]: {
-        width: drawerWidth,
-        flexShrink: 0
-      }
-    },
-    toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-      width: drawerWidth
-    }
-  })
-);
+import { useTheme } from '@material-ui/core/styles';
+import SideDrawerStyles from './SideDrawerStyles';
 
 const SideDrawer = (props: {
   currentStatus: boolean;
   handleDrawerToggle?: () => void;
   variant?: 'permanent' | 'persistent' | 'temporary' | undefined;
 }): JSX.Element => {
-  const classes = useStyles();
+  const classes = SideDrawerStyles();
   const theme = useTheme();
 
   return (
