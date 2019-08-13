@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Navigation from './Navigation/Navigation';
 import LayoutStyles from './LayoutStyles';
-import { createMuiTheme } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 const Layout = (): JSX.Element => {
   const classes = LayoutStyles();
@@ -41,6 +41,7 @@ const Layout = (): JSX.Element => {
           eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
           posuere sollicitudin aliquam ultrices sagittis orci a.
         </Typography>
+        <Button>Click</Button>
       </main>
     </>
   );
