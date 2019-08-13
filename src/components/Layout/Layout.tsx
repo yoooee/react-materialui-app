@@ -1,10 +1,11 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Navigation from './Navigation/Navigation';
-import useStyles from './LayoutStyles';
+import LayoutStyles from './LayoutStyles';
+import { createMuiTheme } from '@material-ui/core/styles';
 
 const Layout = (): JSX.Element => {
-  const classes = useStyles();
+  const classes = LayoutStyles();
 
   return (
     <>
