@@ -17,7 +17,7 @@ const baseTheme = createMuiTheme({
     MuiListItem: {
       root: {
         color: '#0000ff',
-        backgroundColor: '#00ff00',
+        backgroundColor: 'darkGrey',
         '&:hover': {
           backgroundColor: 'pink'
         }
@@ -25,7 +25,12 @@ const baseTheme = createMuiTheme({
     },
     MuiListItemText: {
       root: {
-        color: '#ff0000'
+        color: '#ffffff'
+      }
+    },
+    MuiListItemIcon: {
+      root: {
+        color: '#ffffff'
       }
     }
   }
