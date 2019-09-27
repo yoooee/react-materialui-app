@@ -14,23 +14,23 @@ const baseTheme = createMuiTheme({
     }
   },
   overrides: {
-    MuiListItem: {
+    MuiInputBase: {
+      root: {
+        '&$focused': {
+          border: '3px solid yellow'
+        }
+      }
+    },
+    MuiOutlinedInput: {
       root: {
         color: '#0000ff',
         backgroundColor: 'darkGrey',
         '&:hover': {
           backgroundColor: 'pink'
+        },
+        '&focused': {
+          border: '3px solid red'
         }
-      }
-    },
-    MuiListItemText: {
-      root: {
-        color: '#ffffff'
-      }
-    },
-    MuiListItemIcon: {
-      root: {
-        color: '#ffffff'
       }
     }
   }

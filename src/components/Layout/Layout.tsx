@@ -3,9 +3,28 @@ import Typography from '@material-ui/core/Typography';
 import Navigation from './Navigation/Navigation';
 import LayoutStyles from './LayoutStyles';
 import Button from '@material-ui/core/Button';
+import InputField from './FormFields/InputField/InputField';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  root: {
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    border: 0,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+    '&:hover': {
+      color: 'blue',
+      background: 'linear-gradient(45deg, #FF0000 30%, #00FFFF 90%)'
+    }
+  }
+});
 
 const Layout = (): JSX.Element => {
   const classes = LayoutStyles();
+  const customClasses = useStyles();
 
   return (
     <>
@@ -44,6 +63,10 @@ const Layout = (): JSX.Element => {
         <Button>No Color Applied</Button>
         <Button color="primary">Primary Theme</Button>
         <Button color="secondary">Secondary Theme</Button>
+        <Button className={customClasses.root}>
+          Custom Styles via Hooksgg
+        </Button>
+        <InputField></InputField>
       </main>
     </>
   );
